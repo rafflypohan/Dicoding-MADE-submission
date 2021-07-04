@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingVertical="16dp"
+    android:background="?attr/selectableItemBackground"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/iv_movie"
+        android:layout_width="102dp"
+        android:layout_height="128dp"
+        android:layout_marginStart="16dp"
+        android:scaleType="fitXY"
+        android:src="@color/cardview_dark_background"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:riv_corner_radius="16dp"
+        app:riv_mutate_background="true" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="239dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="0dp"
+        android:ellipsize="none"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="Judul Film"
+        style="@style/TextStyle.Header"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/iv_movie"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_rating"
+        style="@style/TextStyle.Body"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:drawableStart="@drawable/ic_star"
+        android:drawablePadding="4dp"
+        android:elegantTextHeight="true"
+        android:fontFamily="@font/poppins_regular"
+        android:text="4.4"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.08"
+        app:layout_constraintStart_toEndOf="@+id/iv_movie"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title" />
+
+    <TextView
+        android:id="@+id/tv_overview"
+        style="@style/TextStyle.Body"
+        android:layout_width="235dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:elegantTextHeight="true"
+        android:ellipsize="end"
+        android:fontFamily="@font/poppins_regular"
+        android:maxLines="2"
+        android:text="Overview.."
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.413"
+        app:layout_constraintStart_toEndOf="@+id/iv_movie"
+        app:layout_constraintTop_toBottomOf="@+id/tv_rating" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@+id/navHomeGraph">
+
+    <include-dynamic
+        android:id="@+id/navHomeGraph"
+        app:moduleName="home"
+        app:graphResName="nav_home_graph"/>
+
+    <include-dynamic
+        android:id="@+id/navFavoriteGraph"
+        app:moduleName="favorite"
+        app:graphResName="nav_favorite_graph"/>
+
+    <include-dynamic
+        android:id="@+id/navSettingsGraph"
+        app:moduleName="settings"
+        app:graphResName="nav_settings_graph"/>
+
+
+
+</navigation>
